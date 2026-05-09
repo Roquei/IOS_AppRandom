@@ -22,6 +22,7 @@ struct UserDetailView: View {
                     FieldRow(label: "Gender", value: viewModel.currentUser?.gender)
                     FieldRow(label: "City", value: viewModel.currentUser?.location.city)
                     FieldRow(label: "Country", value: viewModel.currentUser?.location.country)
+                    FieldRow(label: "Phone", value: viewModel.currentUser?.phone)
                 }.padding(.horizontal)
 
                 Button(action: { viewModel.fetchRandomUser() }) {
